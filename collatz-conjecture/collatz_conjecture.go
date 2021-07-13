@@ -2,8 +2,7 @@ package collatzconjecture
 
 import "errors"
 
-// Function CollatzConjecture returns the number of steps
-// needed for n to reach 1 in a colltaz series.
+// Function CollatzConjecture returns the number of steps needed for n to reach 1 in a colltaz series.
 func CollatzConjecture(n int) (int, error) {
 	if n <= 0 {
 		return 0, errors.New("provided number should be non-zero positive number")
