@@ -25,6 +25,7 @@ var romanConversionTable []romanConversion = []romanConversion{
 	{"I", 1},
 }
 
+// ToRomanNumeral converts the given number into roman within 0 to 3000
 func ToRomanNumeral(num int) (string, error) {
 	if num > 3000 || num <= 0 {
 		return "", errors.New("number beyond range")
