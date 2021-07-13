@@ -2,6 +2,7 @@ package hamming
 
 import "errors"
 
+// Function Distance returns the hamming distance between two strings.
 func Distance(a, b string) (int, error) {
 	if len(a) != len(b) {
 		return 0, errors.New("unequal length strands")
