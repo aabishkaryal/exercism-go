@@ -1,10 +1,8 @@
-// Package proverb should have a package comment that summarizes what it's about.
-// https://golang.org/doc/effective_go.html#commentary
 package proverb
 
 import "fmt"
 
-// Proverb should have a comment documenting it.
+// Proverb returns the proverb by chaining the rhymes.
 func Proverb(rhyme []string) []string {
 	proverb := make([]string, len(rhyme))
 	for i, r := range rhyme {
