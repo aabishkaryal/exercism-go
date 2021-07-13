@@ -15,6 +15,7 @@ var yearConversion map[Planet]float64 = map[Planet]float64{
 	"Neptune": 164.79132,
 }
 
+// Age returns the number of years for given number of seconds on given planet.
 func Age(secs float64, planet Planet) float64 {
 	return secs / EARTH_YEAR / yearConversion[planet]
 }
